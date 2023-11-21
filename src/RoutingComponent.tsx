@@ -12,7 +12,7 @@ interface RoutingProps {
 
 const RoutingComponent: React.FC<RoutingProps> = () => {
   return (
-    <div>
+    <div className='routingComponent'>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

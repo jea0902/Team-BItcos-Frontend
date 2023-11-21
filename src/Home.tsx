@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./css/App.css";
 interface HomeProps {
     // Home 컴포넌트의 props 타입을 정의
 }
@@ -14,9 +14,10 @@ interface HomeProps {
 
 const Home : React.FC<HomeProps> = () => {
     return (
-        <div>
-            홈입니다.
-        </div>
+    <div className='HomeContainer'>
+      홈입니다.
+      
+    </div>
     );
 };
 

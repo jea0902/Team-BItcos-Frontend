@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -11,6 +12,19 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+/* 기본 스타일 (라이트 모드) */
+body {
+  background-color: #fff;
+  color: #000; /* 폰트 색상은 필요에 따라 조절하세요 */
+  height: 100vh;
+}
+
+/* 다크 모드 스타일 */
+body.dark-mode {
+  background-color: #282c34;
+  color: #fff;
 }
 
 .App-header {
