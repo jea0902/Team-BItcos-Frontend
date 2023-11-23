@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
         <button className="navbar-toggler order-0 ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <a className="navbar-brand me-auto" href="#">코인의 민족</a>
+        <a className="navbar-brand me-auto" href="#">비트코스</a>
         
         <div className="offcanvas offcanvas-end" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div className="offcanvas-header">

@@ -13,10 +13,10 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App-Container">
+      <Navbar />
       <RoutingComponent />
       <Footer />
-      <Navbar />
     </div>
   );
 }

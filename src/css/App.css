@@ -1,33 +1,48 @@
 
-.App {
+
+.App-Container {
+  display:flex;
+  flex-direction: column;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-/* 기본 스타일 (라이트 모드) */
-body {
-  background-color: #fff;
-  color: #000; /* 폰트 색상은 필요에 따라 조절하세요 */
   height: 100vh;
 }
 
-/* 다크 모드 스타일 */
-body.dark-mode {
-  background-color: #282c34;
-  color: #fff;
+.mainContents-Container {
+  flex : 1; /* 나머지 공간 다 먹게 수정 */
 }
 
-.App-header {
+.Footer-Container {
+  height : 20vh;
+}
+
+
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+} */
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* 기본 스타일 (라이트 모드) */
+/* body {
+  background-color: #fff;
+  color: #000; */
+  /* 폰트 색상은 필요에 따라 조절하세요 */
+  /* height: 100vh;
+} */
+
+/* 다크 모드 스타일 */
+/* body.dark-mode {
+  background-color: #282c34;
+  color: #fff;
+} */
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -46,7 +61,8 @@ body.dark-mode {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
-}
+} */

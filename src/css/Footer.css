@@ -1,0 +1,41 @@
+.Footer-Container {
+    margin-top : auto;
+    padding: 20px;
+    border-top: 0.5px solid #f0f0f0;
+  }
+
+.have-3sec {
+    display:flex;
+    justify-content: space-around;
+}
+
+.first-sec {
+    flex : 1; /* 가로 10% 비율 */
+}
+
+.second-sec {
+    flex : 7;
+    font-size : 15px;
+    text-align: start;
+}
+
+.third-sec {
+    flex : 3;
+    display: flex;
+    flex-direction: row; /* row면 가로방향으로 나뉘어야 하는데 왜 세로방향으로 나뉘지? */
+    font-size: 15px;
+}
+
+.third-one,.third-two {
+    flex-grow: 1;
+}
+
+    .third-one ul, .third-two ul {
+        list-style-type: none;    /* 리스트 아이템의 기본 마커(점)을 없앰 */
+        padding-left : 0;     /* 리스트 왼쪽 여백 제거 */
+        /* margin-top: 8px; */
+    }
+
+    .third-one li, .third-two li {
+        margin-bottom: 8px;  /* 각 리스트 아이템 사이의 간격 */
+    }
