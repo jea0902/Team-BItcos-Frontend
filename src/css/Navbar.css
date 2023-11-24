@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #203fd2;
+    /* 시그니처 컬러 */
+}
+
+.custom-toggler {
+    border : none !important;    /* 버튼의 border 제거 */
+    background-color: transparent !important;   /* 배경색을 투명하게 */
+    box-shadow: none !important;  /* 그림자 효과 제거 */
+}
+
+.offcanvas {
+    margin-top: 0;   /* 상단 공백 제거를 통해 offcanvas-body가 offcanvas 공간을 전부 차지할 수 있게*/
+    top : 0;   /* 최상단에 위치하도록 - 위에 거랑 + top:0까지 써서 해결은 됐는데 왜 해결됐는지 알 수 없음. 이걸 지워도 이미 되어 있음. */
+}
+
+.navbar-nav .nav-link {   /* 비활성 상태 */
+    color : rgba(255, 255, 255, 0.835) !important;
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link.active {   /* 활성 상태  - 이거는 JS 코드로 활성화 비활성화 *상태를 동적으로 제어해야 함(이벤트로).*/
+    color : rgb(255, 255, 255);
+}
+
+.nav-link {
+    margin-right : 3vw;
+}

@@ -1,12 +1,13 @@
 import React from 'react'
 import "./css/Footer.css"
+import 파란로고 from "./image/bitcosLogo-blue.png";
 
 export default function Footer() {
   return (
     <div className='Footer-Container'>
       <div className='have-3sec'>
         <div className='first-sec'>
-          로고
+          <img src={파란로고} alt="비트코스 로고" style={{ width:"100px",height:"auto"}}/>
         </div>
         <div className='second-sec'>
           <strong>고객센터 010-2534-1382</strong> (평일 9:00 ~ 18:00/ 주말 및 공휴일 휴무)  <br />
