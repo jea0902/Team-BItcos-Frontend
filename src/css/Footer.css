@@ -22,7 +22,7 @@
 .third-sec {
     flex : 3;
     display: flex;
-    flex-direction: row; /* row면 가로방향으로 나뉘어야 하는데 왜 세로방향으로 나뉘지? */
+    flex-direction: row; /* 한 줄에 한 행, 한 행 이렇게 나누는 방식 */
     font-size: 15px;
 }
 

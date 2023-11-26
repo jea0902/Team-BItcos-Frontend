@@ -1,0 +1,19 @@
+.ThreeTabContainer {
+    background-color: #151924 !important;
+    color : #FFFFF0;
+}
+
+.ThreeTabContainer .nav-tabs .nav-link {
+    /* css도 깊이 들어가야 적용이 된다 정확히 타겟팅 */
+    color : #FFFFF0;
+}
+
+.ThreeTabContainer .nav-tabs .nav-link.active {
+    /* 액티브 상태일 때도 */
+    color : #151924;
+    background-color: #FFFFF0;
+}
+
+.tab-content {
+    /* text-align: center; */
+}

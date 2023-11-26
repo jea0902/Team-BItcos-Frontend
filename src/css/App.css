@@ -1,4 +1,11 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+/* 부트스트랩 다크모드 디자인 가져오려면 */
 
+/* 다크모드 */
+body {
+  color: #fff;
+  background-color: #343a40;
+}
 
 .App-Container {
   display:flex;

@@ -1,0 +1,21 @@
+.integratedSection {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.sec1 {
+    width: 60vw;
+    height: 100vh;  /* 지정해두어야 되는구나 */
+}
+
+.sec2 {
+    width: 20vw;
+    height: 100vh;
+}
+
+.sec3{
+    width : 20vw;
+    height: 100vh;
+}
+

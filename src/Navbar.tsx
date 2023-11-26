@@ -13,13 +13,13 @@ const Navbar: React.FC = () => {
         <button className="navbar-toggler custom-toggler order-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
           <img src={햄버거메뉴아이콘} alt='custom-Hamburger-Icon' style={{width:"20px"}}/>
         </button>
-        <a className="navbar-brand me-auto" href="#"><img src={로고후보2} alt="비트코스로고" style={{ width:"90px",height:"auto", marginLeft:"12vw"}}/></a>
+        <a className="navbar-brand me-auto" href="/"><img src={로고후보2} alt="비트코스로고" style={{ width:"90px",height:"auto", marginLeft:"12vw"}}/></a>
 
         <div className="offcanvas offcanvas-start" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div className="offcanvas-body text-start">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">모의 선물거래소</a>
+                <a className="nav-link active" aria-current="page" href="/Virtual-Future-Trading">모의 선물거래소</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">입출금</a>
@@ -51,10 +51,10 @@ const Navbar: React.FC = () => {
               </li>
 
               <li className="nav-item" style={{marginLeft:"15vw"}}>
-                <a className="nav-link active" href="#">로그인</a>
+                <a className="nav-link active" href="/Login">로그인</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">회원가입</a>
+                <a className="nav-link active" href="/SignUp">회원가입</a>
               </li>
             </ul>
           </div>
