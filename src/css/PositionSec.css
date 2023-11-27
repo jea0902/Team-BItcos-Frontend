@@ -1,0 +1,10 @@
+.positionSection-Container {
+    background-color: #151924;
+    color : #FFFFF0;
+    height: 100vh;
+}
+
+.positionSection-Container .Select_Leverage-section .form-select {
+    background-color: #151924 !important;
+    color : #FFFFF0;
+}

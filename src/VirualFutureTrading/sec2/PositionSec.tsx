@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "../../css/PositionSec.css";
 import LongBtn from './LeverageBtn/LongBtn';
 import ShortBtn from './LeverageBtn/ShortBtn';
+import LMStaps from './LMStaps/LMStaps';
 
 const PositionSec : React.FC = () => {
 
@@ -47,7 +48,7 @@ const PositionSec : React.FC = () => {
 
     const handleInputLongChange = (event : React.ChangeEvent<HTMLInputElement>)=> {
         const value = event.target.value.trim();
-  const numericValue = /^\d+$/.test(value) ? parseInt(value, 10) : 1;
+        const numericValue = /^\d+$/.test(value) ? parseInt(value, 10) : 1;
         
         setLongLeverage(numericValue);
       };
@@ -55,12 +56,14 @@ const PositionSec : React.FC = () => {
     const handleInputShortChange = (event : React.ChangeEvent<HTMLInputElement>)=> {
         setShortLeverage(parseInt(event.target.value));
       };
-
+    
+    const [LMS,setLMS] = useState(1); // Limit, Market, StopLimit 상태변수
+    
 
   return (
     <div className='positionSection-Container'>
-        <div className='select&Leverage'>
-            <select className="form-select" style={{width:"10vw"}}>
+        <div className='Select_Leverage-section' style={{display:"flex", flexDirection:"row", borderBottom: "1px solid #222631", padding:"5px"}}>
+            <select className="form-select" style={{width:"auto"}}>
                 <option selected>담보금 제한</option>
                     <option value="1">담보금 무제한</option>
             </select>
@@ -82,6 +85,12 @@ const PositionSec : React.FC = () => {
                 handleInputShortChange={handleInputShortChange}
             />
 
+        </div>
+        <div className="Limit_Market_Stop-taps-section" style={{ borderBottom: "1px solid #222631"}}>
+            <LMStaps />
+        </div>
+        <div className='asset-section'>
+            
         </div>
         레버리지 선택 Long, 레버리지 선택 Short
 

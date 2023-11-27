@@ -1,0 +1,27 @@
+.custom-Long-Btn {
+    /* 부트스트랩 보다 우선시 */
+    color : #089981 !important;
+    border: transparent !important;
+    background-color: transparent !important;
+    font-weight: bold !important;
+    min-width: 70.91px;
+}
+
+.custom-Short-Btn {
+    /* 부트스트랩 보다 우선시 */
+    color : #f23645 !important;
+    border: transparent !important;
+    background-color: transparent !important;
+    font-weight: bold !important;
+    min-width: 70.91px; /* 최소 크기 - 반응형으로 사용하자*/
+}
+
+.modal-dialog .modal-content {
+    background-color: #151924 !important;
+    color : #FFFFF0 !important;
+}
+
+.modal-dialog .modal-content .modal-body .mb-3 .form-control {
+    background-color: #151924 !important;
+    color : #FFFFF0 !important;
+}
