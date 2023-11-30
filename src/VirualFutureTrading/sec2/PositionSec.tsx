@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../../css/PositionSec.css";
 import LongBtn from './LeverageBtn/LongBtn';
 import ShortBtn from './LeverageBtn/ShortBtn';
-import LMStaps from './LMStaps/LMStaps';
+import LMStaps from './ThreeTabs/ThreeTabsSec2';
 
 const PositionSec : React.FC = () => {
 

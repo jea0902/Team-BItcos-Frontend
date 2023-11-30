@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../../css/ThreeTabs.css";
+import "../../css/Sec1-3tabs.css";
 
 
 

@@ -1,7 +1,7 @@
 .integratedSection {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 98vw;  /* 여기 너비 100%로 해두면, 기존 뷰포트 100%를 초과하네 */
 }
 
 .sec1 {

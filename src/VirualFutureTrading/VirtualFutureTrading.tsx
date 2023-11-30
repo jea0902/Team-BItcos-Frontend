@@ -1,7 +1,7 @@
 import React from 'react';
 import "../css/VirtualFutureTrading.css";
 import TradingViewWidget from './sec1/TradingViewWidget';
-import ThreeTab from './sec1/ThreeTabs';
+import ThreeTab from './sec1/Sec1-3tabs';
 import PositionSec from './sec2/PositionSec';
 
 const VirtualFutureTrading : React.FC = () => {
