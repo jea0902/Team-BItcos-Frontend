@@ -2,15 +2,16 @@ import React, {useState,useEffect} from 'react'
 
 const Tab1Limit : React.FC = () => {
 
-  // 지정가에서도 시장가 가져와서 그 가격을 매수 가격 디폴트로 둬야 함
   // 전역으로 둬야할 변수
+  // 로그인 했는지 여부 -> 로그인 버튼을 둘지 안둘지 정할 수 있음.
+  // 주문 가능 자산, 로그인 버튼, 아래 에셋까지
   const [userAssets, setUserAsseets] = useState(5000000);
 
   // 현재 보고 있는 코인 이름
   const [coinName, setCoinName] = useState<String>("");
 
 
-
+  // 지정가에서도 시장가 가져와서 그 가격을 매수 가격 디폴트로 둬야 함
   // 매수 가격
   const [purchasePrice, setPurchasePrice] = useState<number>(50000000);
 
@@ -32,8 +33,8 @@ const Tab1Limit : React.FC = () => {
     };
   
 
-  // 여기부터 네번째 행 - 주문 수량(%)과 range bar, 수량 버튼
-  // (내가 가진 돈 x 주문할 %) / 매수가격 
+  // 여기부터 네번째 행 - 주문 수량(%)과 range bar, 수량 버튼 
+  // range bar나 아래 % 버튼을 통해서 orderPercent 값을 연결 -> 주문 수량을 정할 수 있게
   const [orderPercent, setOrderPercent] = useState(0);
 
   const handleOrderChange = (event : React.ChangeEvent<HTMLInputElement>) => {
@@ -44,6 +45,7 @@ const Tab1Limit : React.FC = () => {
       setOrderPercent(value);
   }
 
+  // 실제 주문 수량 : 
   // 사게 될 코인 수량(소수점 가능) = (내가 가진 돈 x 주문할 %) / 매수가격 
   const [orderQuantity, setOrderQuantity] = useState<number>(0);
 
@@ -54,7 +56,7 @@ const Tab1Limit : React.FC = () => {
   }
 
   useEffect(() => {
-    // onChange를 통해 orderPercent값이 바뀌고,
+    // onChange(Range Bar, %버튼)를 통해 orderPercent값이 바뀌고,
     // orderPercent값에 따라 주문 수량과 총 주문 금액이 나오게끔
     calculateOrderQuantity();
     calculateTotalPrice();

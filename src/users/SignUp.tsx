@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function SignUp() {
+const SignUp : React.FC = () => {
   return (
-    <div>
-      회원가입
+    <div className='SignUp-Container'>
+        회원가입
     </div>
   )
 }
+export default SignUp;

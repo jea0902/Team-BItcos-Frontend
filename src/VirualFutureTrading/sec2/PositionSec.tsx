@@ -92,24 +92,6 @@ const PositionSec : React.FC = () => {
         <div className='asset-section'>
             
         </div>
-        레버리지 선택 Long, 레버리지 선택 Short
-
-        open 버튼, close 버튼
-
-        탭 Limit, Market
-        가용 금액
-            가격
-            양
-                양을 정할 수 있는 %바
-        Tp/SL 체크하면 아래로 드롭되는 창
-        
-        포지션 Long버튼, 포지션 Short 버튼
-        
-        현재 보유 Assets : ()KRW
-            Account Assets
-            Avaliable
-            전체 미실현 수익 금액
-            실현 수익 %
     </div>
   )
 }

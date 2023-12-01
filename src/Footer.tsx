@@ -11,9 +11,9 @@ export default function Footer() {
         </div>
         <div className='second-sec'>
           <strong>고객센터 010-2534-1382</strong> (평일 9:00 ~ 18:00/ 주말 및 공휴일 휴무)  <br />
-          <strong>주소 : 경기도 성남시 판교 어쩌구 107동 302호</strong>  <br />
-          비트코스(주) | 대표 : 최재혁 | 사업자등록번호 : 010-253-41382 <br />
-          <strong>가상자산은 고위험 상품으로써 투자금의 전부 또는 일부 손실을 초래할 수 있습니다.</strong>  <br /><br />
+          <strong>주소 : 경기도 부천시 신흥로 276번길 - 15 107동 302호</strong>  <br />
+          비트코스(주) | 대표 : 최재혁 | 사업자등록번호 : 010-253-41382 <br /><br />
+          <strong>가상자산은 고위험 상품으로써 투자금의 손실을 초래할 수 있습니다.</strong>  <br /><br />
           Copyright ⓒ 2023 - Bitcourse Inc All right reserved.
         </div>
         <div className='third-sec'>

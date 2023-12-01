@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
               </li>
 
               <li className="nav-item" style={{marginLeft:"15vw"}}>
-                <a className="nav-link active" href="/Login">로그인</a>
+                <a className="nav-link active" href="/LogIn">로그인</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link active" href="/SignUp">회원가입</a>

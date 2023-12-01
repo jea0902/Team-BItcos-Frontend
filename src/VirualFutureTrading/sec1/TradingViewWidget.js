@@ -29,7 +29,7 @@ export default function TradingViewWidget() {
 
       function createWidget() {
         if (document.getElementById('tradingview_c5dc0') && 'TradingView' in window) {
-          new window.TradingView.widget({
+          const widget = new window.TradingView.widget({
             autosize: true,
             symbol: "UPBIT:BTCKRW",
             interval: "D",
@@ -45,11 +45,22 @@ export default function TradingViewWidget() {
             hotlist: true,
             container_id: "tradingview_c5dc0"
           });
+          
+          // // 위젯의 onDataCallback 이벤트를 사용해 심볼의 가격에 액세스
+          // widget.onDataCallback = function (data) {
+          //   // 최신 종가를 가져옴
+          //   const latestClosePrice = data.close[data.close.length - 1];
+            
+          //   // 이제 latestClosePrice를 추가 처리에 사용할 수 있다.
+          //   console.log("최근 종가", latestClosePrice);
+          // };
+
+          // widget.onChartReadyCallback(() => {
+          //   // 차트가 준비되었으며 여기서 데이터에 액세스 하거나 다른 작업을 수행할 수 있음.
+          // });
         }
       }
-    },
-    []
-  );
+    }, []);
     // css 인라인
   return (
     <div className='tradingview-widget-container' style={{ height: "70%", width: "100%" }}>
