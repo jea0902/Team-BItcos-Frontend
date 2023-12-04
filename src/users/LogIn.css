@@ -1,0 +1,5 @@
+.checkBox-Containder {
+    display: flex;
+    /* flex여야지 gap 사용 가능 */
+    gap: 1vw;
+}

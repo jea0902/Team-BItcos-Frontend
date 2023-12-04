@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
                 <a className="nav-link active" href="#">투자내역</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="#">코인동향</a>
+                <a className="nav-link active" href="/CommunityBoard">커뮤니티 게시판</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
