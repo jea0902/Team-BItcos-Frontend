@@ -1,6 +1,7 @@
 // Navbar.js 또는 Navbar.tsx
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "./css/Navbar.css";
 import 파란로고 from "./image/bitcosLogo-blue.png";
 import 로고후보2 from "./image/bitcosLogo-white-blueback.png";
@@ -15,9 +16,16 @@ const Navbar: React.FC = () => {
         </button>
         <a className="navbar-brand me-auto" href="/"><img src={로고후보2} alt="비트코스로고" style={{ width:"90px",height:"auto", marginLeft:"12vw"}}/></a>
 
-        <div className="offcanvas offcanvas-start" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div className="offcanvas offcanvas-start text-bg-dark" tabIndex={-1} id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          
+          <div className="offcanvas-header">
+            <h5 className="offcanvas-title" id="offcanvasDarkLabel">Offcanvas</h5>
+            <button type="button" className="btn-close btn-close-white" data-bs-dismiss="#offcanvasDarkNavbar" aria-label="Close"></button>
+          </div>
+          
+          
           <div className="offcanvas-body text-start">
-            <ul className="navbar-nav mx-auto">
+            <ul className="navbar-nav mx-auto justify-content-end flex-grow-1 pe-3">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="/Virtual-Future-Trading">모의 선물거래소</a>
               </li>
@@ -59,6 +67,7 @@ const Navbar: React.FC = () => {
             </ul>
           </div>
         </div>
+
       </div>
     </nav>
   );

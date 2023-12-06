@@ -22,7 +22,7 @@ const RoutingComponent: React.FC<RoutingProps> = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Virtual-Future-Trading" element={<VirtualFutureTrading />} />
           <Route path="/SignUp" element={<SignUp />} />
-          <Route path="/Login" element={<LogIn />} />
+          <Route path="/LogIn" element={<LogIn />} />
           <Route path="/CommunityBoard" element={<CommunityBoard />} />
         </Routes>
       </BrowserRouter>

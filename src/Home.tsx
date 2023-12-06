@@ -1,5 +1,8 @@
 import React from 'react'
 import "./css/App.css";
+import TestTailwind from "./testTailwindCSS/TestTailwind"
+import ClippedDrawer from "./testTailwindCSS/MuiDrawer"
+
 interface HomeProps {
     // Home 컴포넌트의 props 타입을 정의
 }
@@ -15,8 +18,9 @@ interface HomeProps {
 const Home : React.FC<HomeProps> = () => {
     return (
     <div className='HomeContainer'>
+      {/* <TestTailwind /> */}
+      <ClippedDrawer />
       홈입니다.
-      
     </div>
     );
 };

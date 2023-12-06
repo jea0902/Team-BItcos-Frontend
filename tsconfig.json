@@ -21,6 +21,8 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src",
+    "custom-typing.d.ts"
+    // 여기에 custom-sypings.d.ts를 넣어서 타입스크립트 컴파일러가 해당 선언 파일을 올바르게 인식하게 수정
   ]
 }
