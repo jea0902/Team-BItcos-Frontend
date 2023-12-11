@@ -3,19 +3,25 @@ import "../css/VirtualFutureTrading.css";
 import TradingViewWidget from './section1/TradingViewWidget';
 import ThreeTab from './section1/Section1-3tabs';
 import PositionSec from './section2/PositionSection';
+import SearchBar from './section3/SearchBar';
+import KrwUsdtHoldTABS from './section3/KrwUsdtHoldTABS';
+import SortableTable from './section3/SortableTable';
 
 const VirtualFutureTrading : React.FC = () => {
     return (
         <div className='integratedSection'>
             <div className='sec1'>
-                    <TradingViewWidget />
-                    <ThreeTab />
+                <TradingViewWidget />
+                <ThreeTab />
             </div>
             <div className='sec2'>
                 <PositionSec />
             </div>
             <div className='sec3'>
-                코인검색 아래 원화탭, USDT탭, 
+                코인검색 아래 원화탭, USDT탭,
+                <SearchBar />
+                <KrwUsdtHoldTABS />
+                <SortableTable />
             </div>
         </div>
     )
