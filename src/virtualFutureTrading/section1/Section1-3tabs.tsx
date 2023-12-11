@@ -15,13 +15,13 @@ const ThreeTab : React.FC = () => {
     
           <ul className="flex border-b border-gray-200" id="myTab" role="tablist">
             <li className="-mb-px flex-1" role="presentation">
-              <button className={`text-teal-500 border-teal-500 ${activeIndex === 0 ? 'border-b-2' : ''} py-3 focus:outline-none`} onClick={() => handleClick(0)} id="one-tab" type="button" role="tab" aria-controls={`tabpanel-${activeIndex}}`} aria-selected={activeIndex === 0}>포지션들(숫자)</button>
+              <button className={`text-white-500 border-teal-500 ${activeIndex === 0 ? 'border-b-2' : ''} py-3 focus:outline-none`} onClick={() => handleClick(0)} id="one-tab" type="button" role="tab" aria-controls={`tabpanel-${activeIndex}}`} aria-selected={activeIndex === 0}>포지션들{}</button>
             </li>
             <li className="-mb-px flex-1" role="presentation">
-              <button className={`text-teal-500 border-teal-500 ${activeIndex === 1 ? 'border-b-2' : ''} py-3 focus:outline-none`} onClick={() => handleClick(1)} id="two-tab" type="button" role="tab" aria-controls={`tabpanel-${activeIndex}}`} aria-selected={activeIndex === 1}>주문한 거래들(숫자)</button>
+              <button className={`text-white-500 border-teal-500 ${activeIndex === 1 ? 'border-b-2' : ''} py-3 focus:outline-none`} onClick={() => handleClick(1)} id="two-tab" type="button" role="tab" aria-controls={`tabpanel-${activeIndex}}`} aria-selected={activeIndex === 1}>주문한 거래들{}</button>
             </li>
             <li className="-mb-px flex-1" role="presentation">
-              <button className={`text-teal-500 border-teal-500 ${activeIndex === 2 ? 'border-b-2' : ''} py-3 focus:outline-none`} onClick={() => handleClick(2)} id="three-tab" type="button" role="tab" aria-controls={`tabpanel-${activeIndex}}`} aria-selected={activeIndex === 2}>주문 체결 내역</button>
+              <button className={`text-white-500 border-teal-500 ${activeIndex === 2 ? 'border-b-2' : ''} py-3 focus:outline-none`} onClick={() => handleClick(2)} id="three-tab" type="button" role="tab" aria-controls={`tabpanel-${activeIndex}}`} aria-selected={activeIndex === 2}>주문 체결 내역{}</button>
             </li>
           </ul>
           <div className="p-4" id="myTabContent" style={{ marginTop: "10vh" }}>

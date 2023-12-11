@@ -26,6 +26,7 @@ const ThreeTabsSection2 : React.FC = () => {
 
     const handleClick = (index : number) => {
         setActiveIndex(index);
+        console.log(activeIndex);
     };
 
     // 로그인한 유저의 자산을 가져오는 함수
@@ -41,17 +42,17 @@ const ThreeTabsSection2 : React.FC = () => {
 
   return (
     <div className='taps-Container'>
-        <ul className="nav nav-tabs" style={{borderBottom:"1px solid #222631"}}>
-            <li className="nav-item">
+        <ul className="flex flex-wrap -mb-px text-sm font-medium text-center" style={{borderBottom:"1px solid #222631"}}>
+            <li className="me-2">
                 {/* 버튼과 탭 컨텐츠들을 전부 동적으로 변경 <- activeIndex */}
-                <button className={`nav-link ${activeIndex === 0 ? 'active gold-text' : ''}`} onClick={() => handleClick(0)} id="one-tab" data-bs-toggle="tab" type="button" role="tab" aria-controls={`tabpanel-${activeIndex}}`} aria-selected={activeIndex === 0}>
+                <button className={`inline-block p-4 ${activeIndex === 0 ? 'active gold-text' : ''}`} onClick={() => handleClick(0)} id="one-tab" data-bs-toggle="tab" type="button" role="tab" aria-controls={`tabpanel-${activeIndex}}`} aria-selected={activeIndex === 0}>
                     지정가
                 </button>
                 {/* aria-controls : 현재 엘리멘트와 연결된 콘텐츠의 id를 지정 */}
                 {/* aria-selected : 현재 엘리먼트의 선택 여부를 나타냄 true or false */}
             </li>
-            <li className="nav-item">
-                <button className={`nav-link ${activeIndex === 1 ? 'active gold-text' : ''}`} onClick={() => handleClick(1)} id="two-tab" data-bs-toggle="tab" type="button" role="tab" aria-controls={`tabpanel-${activeIndex}}`} aria-selected={activeIndex === 1}>
+            <li className="me-2">
+                <button className={`inline-block p-4 ${activeIndex === 1 ? 'active gold-text' : ''}`} onClick={() => handleClick(1)} id="two-tab" data-bs-toggle="tab" type="button" role="tab" aria-controls={`tabpanel-${activeIndex}}`} aria-selected={activeIndex === 1}>
                     시장가
                 </button>
             </li>
@@ -72,14 +73,14 @@ const ThreeTabsSection2 : React.FC = () => {
         </div>
 
         <div className="tab-content" id="myTabContent" style={{marginTop : "3vh"}}>
-            <div className={`tab-pane fade ${activeIndex === 0 ? 'show active' : ''}`} id="one-tab" role="tabpanel" aria-labelledby="one-tab">
+            <div className={`tab-pane fade ${activeIndex === 0 ? 'show active' : 'hidden'}`} id="one-tab" role="tabpanel" aria-labelledby="one-tab">
                 {/* 지정가 탭 */}
                 <div style={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>
                     <Tab1Limit />
                 </div>
             </div>
 
-            <div className={`tab-pane fade ${activeIndex === 1 ? 'show active' : ''}`} id="two-tab" role="tabpanel" aria-labelledby="two-tab">
+            <div className={`tab-pane fade ${activeIndex === 1 ? 'show active' : 'hidden'}`} id="two-tab" role="tabpanel" aria-labelledby="two-tab">
                 {/* 시장가 탭 */}
                 <div style={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>
                     <Tab2Market />

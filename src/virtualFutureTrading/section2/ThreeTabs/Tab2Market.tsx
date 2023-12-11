@@ -51,7 +51,7 @@ const Tab2Market : React.FC = () => {
 
           {/* 세 번째 행의 두 번째 열 (Input 창) */}
           <div className="input-group" style={{width:"55%", height:"auto"}}>
-              <input type="text" className="form-control"
+              <input type="text" className="form-control text-black"
               style={{direction:"ltr", textAlign:"right"}} aria-label="Recipient's username" aria-describedby="basic-addon2"
               onChange={handleOrderChange}
               value={totalPrice.toLocaleString()}

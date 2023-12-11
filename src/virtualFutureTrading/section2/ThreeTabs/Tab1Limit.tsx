@@ -104,7 +104,7 @@ const Tab1Limit : React.FC = () => {
 
         {/* 두 번째 행의 두 번째 열 (Input 창) */}
         <div className="input-group" style={{width:"55%", height:"auto"}}>
-            <input type="text" className="form-control" placeholder="매수가격(KRW)"
+            <input type="text" className="form-control text-black" placeholder="매수가격(KRW)"
             style={{direction:"ltr", textAlign:"right"}} aria-label="Recipient's username" aria-describedby="basic-addon2"
             onChange={handleInputChange}
             onKeyDown={handleKeyDown}
@@ -122,7 +122,7 @@ const Tab1Limit : React.FC = () => {
           {/* 세 번째 행의 두 번째 열 (Input 창) */}
           {/* 여기 있는 주문 수량 =  내가 가진 돈의 %로 계산한 돈 / 매수 가격 => 주문 수량 return */}
           <div className="input-group" style={{width:"55%", height:"auto"}}>
-              <input type="text" className="form-control" placeholder="매수가격(KRW)"
+              <input type="text" className="form-control text-black" placeholder="매수가격(KRW)"
               style={{direction:"ltr", textAlign:"right"}} aria-label="Recipient's username" aria-describedby="basic-addon2"
               onChange={handleOrderChange}
               // onChange 중요
@@ -163,7 +163,7 @@ const Tab1Limit : React.FC = () => {
 
           {/* 다섯 번째 행의 두 번째 열 (Input 창) */}
           <div className="input-group" style={{width:"55%", height:"auto"}}>
-              <input type="text" className="form-control"
+              <input type="text" className="form-control text-black"
               style={{direction:"ltr", textAlign:"right"}} aria-label="Recipient's username" aria-describedby="basic-addon2"
               onChange={handleOrderChange}
               // onChange 중요
