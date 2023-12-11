@@ -71,7 +71,6 @@ const PositionSec : React.FC = () => {
             <LongBtn
                 longLeverage={longLeverage}
                 prevLongLeverage={prevLongLeverage}
-                handleLongCancel={handleLongCancel}
                 handleLongConfirm={handleLongConfirm}
                 handleLongRangeChange={handleLongRangeChange}
                 handleInputLongChange={handleInputLongChange}
@@ -79,7 +78,6 @@ const PositionSec : React.FC = () => {
             <ShortBtn
                 shortLeverage={shortLeverage}
                 prevShortLeverage={prevLongLeverage}
-                handleShortCancel={handleShortCancel}
                 handleShortConfirm={handleShortConfirm}
                 handleShortRangeChange={handleShortRangeChange}
                 handleInputShortChange={handleInputShortChange}
