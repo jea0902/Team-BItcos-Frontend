@@ -18,7 +18,6 @@ const VirtualFutureTrading : React.FC = () => {
                 <PositionSec />
             </div>
             <div className='sec3'>
-                코인검색 아래 원화탭, USDT탭,
                 <SearchBar />
                 <KrwUsdtHoldTABS />
                 <SortableTable />
