@@ -1,0 +1,22 @@
+.taps-Container .nav-item {
+  margin-right: -3.5rem;
+}
+
+.taps-Container .nav-item .nav-link {
+  font-size: 15px;
+  color: #fffff0;
+}
+
+/* 깊숙히 들어가되, 정확히 link의 hover랑 focus를 집어야 함 */
+.taps-Container .nav-tabs .nav-item .nav-link:focus,
+.taps-Container .nav-tabs .nav-item .nav-link:hover {
+  border: transparent !important;
+  /* 테두리 제거 */
+  position: static !important;
+}
+
+.gold-text {
+  color: #baab0b !important;
+  background-color: transparent !important;
+  border: transparent !important;
+}
