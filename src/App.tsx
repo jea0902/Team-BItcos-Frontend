@@ -3,6 +3,10 @@ import './css/App.css';
 import Main from './Main';
 import VirtualFutureTrading from './virtualFutureTrading/VirtualFutureTrading';
 import Nav from './Nav';
+import LogIn from './users/LogIn';
+import SignUp from './users/SignUp';
+import BulletinBoard from './users/BulletinBoard/BulletinBoard';
+import WritePost from './users/BulletinBoard/WritePost';
 
 
 function App() {
@@ -17,6 +21,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/Virtual-Future-Trading" element={<VirtualFutureTrading />} />
+          <Route path="/LogIn" element={<LogIn />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/Board" element={<BulletinBoard />} />
+          <Route path="/Write-post" element={<WritePost />} />
         </Routes>
       </BrowserRouter>
     </div>

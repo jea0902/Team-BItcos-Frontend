@@ -4,9 +4,9 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
     { name: '가상 선물거래소', href: '/Virtual-Future-Trading' },
-    { name: '투자 내역', href: '#' },
     { name: '트레이딩 지표', href: '#' },
-    { name: '게시판', href: '#' },
+    { name: '매매 기법', href: '#' },
+    { name: '수익인증 게시판', href: '/Board' },
   ]
 
 export default function Nav() {
@@ -46,7 +46,7 @@ export default function Nav() {
           </div>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <a href="/LogIn" className="text-sm font-semibold leading-6 text-gray-900">
               로그인 <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
