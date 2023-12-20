@@ -7,6 +7,7 @@ import LogIn from './users/LogIn';
 import SignUp from './users/SignUp';
 import BulletinBoard from './users/BulletinBoard/BulletinBoard';
 import WritePost from './users/BulletinBoard/WritePost';
+import FetchFromUpbit from './virtualFutureTrading/FetchFromUpbit';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/Write-post" element={<WritePost />} />
         </Routes>
       </BrowserRouter>
+      <FetchFromUpbit />
     </div>
   );
 }
