@@ -4,8 +4,8 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
     { name: '가상 선물거래소', href: '/Virtual-Future-Trading' },
-    { name: '트레이딩 지표', href: '#' },
-    { name: '매매 기법', href: '#' },
+    { name: '트레이딩 분석 지표', href: '#' },
+    { name: '실시간 정보 사이트 링크모음', href: '#' },
     { name: '수익인증 게시판', href: '/Board' },
   ]
 

@@ -9,11 +9,26 @@ import BulletinBoard from './users/BulletinBoard/BulletinBoard';
 import WritePost from './users/BulletinBoard/WritePost';
 import FetchFromUpbit from './virtualFutureTrading/FetchFromUpbit';
 
+import { Provider, useDispatch, useSelector } from 'react-redux';
+import store from "./store";
+
+// function Counter (){
+//   const dispatch = useDispatch();
+//   const count = useSelector(state => {
+//     return state.counter.value;
+//   });
+
+// }
 
 function App() {
 
   return (
     <div className="App">
+      {/* <Provider store =  {store}>
+        <div>
+          <Counter></Counter>
+        </div>
+      </Provider> */}
       <Nav />
       {/* BrowserRouter는 최상위 컴포넌트에서 한번 사용되어야 하고,
       아래 Main 컴포넌트보다 위에 있어야 먼저 렌더링이 되어서

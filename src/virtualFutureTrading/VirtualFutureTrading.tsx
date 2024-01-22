@@ -9,19 +9,13 @@ import SortableTable from './section3/SortableTable';
 
 const VirtualFutureTrading : React.FC = () => {
     return (
-        <div className='integratedSection'>
+        <div className='integratedSection w-full'>
             <div className='sec1'>
                 <TradingViewWidget />
                 <ThreeTab />
             </div>
             <div className='sec2'>
                 <PositionSec />
-            </div>
-            <div className='sec3'>
-                코인검색 아래 원화탭, USDT탭,
-                <SearchBar />
-                <KrwUsdtHoldTABS />
-                <SortableTable />
             </div>
         </div>
     )
