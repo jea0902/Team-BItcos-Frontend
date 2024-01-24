@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Await, BrowserRouter, Route, Routes } from 'react-router-dom';
 import './css/App.css';
 import Main from './Main';
 import VirtualFutureTrading from './virtualFutureTrading/VirtualFutureTrading';
@@ -9,18 +9,75 @@ import BulletinBoard from './users/BulletinBoard/BulletinBoard';
 import WritePost from './users/BulletinBoard/WritePost';
 import FetchFromUpbit from './virtualFutureTrading/FetchFromUpbit';
 
-import { Provider, useDispatch, useSelector } from 'react-redux';
-import store from "./store";
-
-// function Counter (){
-//   const dispatch = useDispatch();
-//   const count = useSelector(state => {
-//     return state.counter.value;
-//   });
-
-// }
+// firestore의 데이터를 가져오려면
+import { db, firestore, firebasApp } from './Firebase/firebase';
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    // 데이터 추가
+    const addUser = async () => {
+      try {
+        const userRef = await db.collection('Users').add({
+          email : "jea0902@naver.com",
+          password : "hihihi1!"
+          });
+          console.log("유저 추가", userRef.id);
+        } catch (err) {
+          console.log("Error adding User", err);
+        }
+      }
+    
+    // 데이터 조회
+    const getUser = async (colId : string, docId : string) => {
+      try {
+        const doc = await db.collection(colId).doc(docId).get();
+        if(doc.exists) {
+          console.log(doc.data());
+        } else {
+          console.log("해당 dic 없음");
+        }
+        console.log("get : good");
+      } catch (err) {
+        alert("get : error");
+        }
+      }
+    
+    // 데이터 업데이트 - document를 완전히 덮어쓰는 것이 아니라 data에 있는 컬럼만 바뀜.
+    const updateDoc = async (colId : string, docId : string, data : string) => {
+      try {
+        await db.collection(colId).doc(docId).update(data);
+        console.log("update : good");
+      } catch (err) {
+        alert("update : error");
+      }
+    }
+
+    // 데이터 삭제 - document
+    const deleteDoc = async (colId : string, docId : string) => {
+      try {
+        await db.collection(colId).doc(docId).delete();
+        console.log("delete document : good");
+      } catch (err) {
+        alert("delete document : error");
+      }
+    };
+
+    // 데이터 삭제 - doc의 컬럼(필드)를 지우는 방법
+    const deleteField = async (colId : string , docId : string, fieldName : string) => {
+      try {
+        const data : {[key : string]:any} = {};
+        // data 객체의 타입을 명시적으로 지정
+        data[fieldName] = firestore.FieldValue.delete();
+        await db.collection(colId).doc(docId).update(data);
+        console.log("delete field : good");
+      } catch (err) {
+        alert("delete field : err");
+      }
+    }
+  }, [])
+
 
   return (
     <div className="App">
